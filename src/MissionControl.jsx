@@ -15,7 +15,20 @@ function missionControl({missions}){
             <ol>
                 {missions.map(m=>{
                     return <ul key={m.id}>
-                        
+                        <div>
+                            <MissionCard
+                            name = {m.name}
+                            status = {m.status}
+                            crew = {m.crew}>
+                        </MissionCard>
+                        </div>
+
+                        <div>
+                            <MissionAction
+                                missionID={m.id}
+                                >
+                            </MissionAction>
+                        </div>
                     </ul>
                 })}
             </ol>
