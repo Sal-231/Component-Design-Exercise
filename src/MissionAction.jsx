@@ -4,9 +4,15 @@ import MissionCard from "./MissionCard.jsx";
 import MissionFilter from "./MissionFilter.jsx";
 import MissionControl from "./MissionControl.jsx";
 
-function missionAction(props){
+function missionAction(id){
     return(
         <>
+            <button
+
+            >Launch</button>
+            <button
+
+            >Complete</button>
         </>
     )
 }

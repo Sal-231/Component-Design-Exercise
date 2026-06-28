@@ -1,16 +1,24 @@
 // The core component that holds the state for space missions.
 // It is responsible for rendering each mission's details and actions.
 // It manages the mission list and its statuses, orchestrating the data flow to child components.
-//import styles from "./MissionControl.module.css";
 
+//import {useState} from "react";
+//import styles from "./MissionControl.css";
 import MissionCard from "./MissionCard.jsx";
 import MissionAction from "./MissionAction.jsx";
 import MissionFilter from "./MissionFilter.jsx";
 
+
 function missionControl({missions}){
+    
+
+
+
     return(
         <>
             <h1>Space Mission Control</h1>
+
+            <MissionFilter status="all"></MissionFilter>
 
             <ol>
                 {missions.map(m=>{
