@@ -10,9 +10,16 @@ import MissionFilter from "./MissionFilter.jsx";
 
 
 function missionControl({missions}){
-    
 
-
+    function changeStatus(id, change){
+        
+        
+        
+        
+        // const target = document.getElementById(id)
+        // console.log(target);
+        // target.innerHTML = `${change}`;
+    };
 
     return(
         <>
@@ -34,14 +41,14 @@ function missionControl({missions}){
                         <div>
                             <MissionAction
                                 missionID={m.id}
-                                >
+                                changeStatus={changeStatus}>
                             </MissionAction>
                         </div>
                     </ul>
                 })}
             </ol>
         </>
-    )
+    );
 }
 
 export default missionControl;
