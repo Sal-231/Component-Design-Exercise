@@ -1,0 +1,8 @@
+body{
+    display: flex;
+}
+
+h1{
+    /* display: felx; */
+    justify-content: center;
+}
