@@ -3,19 +3,19 @@
 
 import "./MissionAction.css";
 
-function missionAction({id, changeStatus}){
+function MissionAction({id, changeStatus}){
     return(
-        <>
-            <button
+        <div className="MissionActionButtons">
+            <button className="MissionActionButton"
             onClick={() => changeStatus(id, "Active")}
             >Launch</button>
 
-            <button
+            <button className="MissionActionButton"
             onClick={() => changeStatus(id, "Completed")}
             >Complete</button>
-        </>
+        </div>
     )
 }
 
 
-export default missionAction;
+export default MissionAction;

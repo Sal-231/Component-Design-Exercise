@@ -1,0 +1,17 @@
+.MissionActionButtons{
+    text-align: right;
+}
+
+.MissionActionButton{
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid orangered;
+    margin-left: 5px;
+    margin-right: 10px;
+    transform: translateY(-85px)
+}
+
+.MissionActionButton:hover{
+    cursor: pointer;
+    background-color: rgb(66, 66, 66);
+}
