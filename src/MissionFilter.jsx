@@ -2,7 +2,7 @@
 
 import "./MissionFilter.css";
 
-function missionFilter(){
+function missionFilter({setFilter}){
     const status = ["All", "Planned", "Active", "Completed"]
     return(
         <div className="MissionFilterButtons">
@@ -12,7 +12,7 @@ function missionFilter(){
                     className="MissionFilterButton"
                     key={s}
                     onClick={()=>{
-
+                        setFilter(s)
                     }}>
                 {s}</button>
             ))
