@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import App from "./App.jsx";
+import.meta.hot.accept(() => import.meta.hot.invalidate());
 
 ReactDOM.createRoot(document.getElementById("root"))
         .render(

@@ -7,13 +7,13 @@
 function missionAction({id, changeStatus}){
     return(
         <>
+        
             <button
-            onClick={() =>changeStatus(id, "Launched")}
-
+            onClick={() =>changeStatus(id, "Active")}
             >Launch</button>
 
             <button
-
+            onClick={() =>changeStatus(id, "Launched")}
             >Complete</button>
         </>
     )
