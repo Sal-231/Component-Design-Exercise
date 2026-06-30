@@ -5,11 +5,11 @@ import "./MissionFilter.css";
 function missionFilter(){
     const status = ["All", "Planned", "Active", "Completed"]
     return(
-        <>
+        <div className="MissionFilterButtons">
         {
             status.map((s)=>(
                 <button
-                    className="MissionFilter-button"
+                    className="MissionFilterButton"
                     key={s}
                     onClick={()=>{
 
@@ -18,7 +18,7 @@ function missionFilter(){
             ))
         }
         
-        </>
+        </div>
     )
 }
 

@@ -3,14 +3,14 @@
 
 import "./MissionCard.css";
 
-function missionCard({name, status, crew}){
+function MissionCard({name, status, crew}){
     return(
-        <>
+        <div className="missionCard">
             <h2>{name}</h2>
             <p>Status: {status}</p>
             <p>Crew: {crew[0]} & {crew[1]}</p>
-        </>
+        </div>
     )
 }
 
-export default missionCard;
+export default MissionCard;

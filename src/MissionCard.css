@@ -1,0 +1,12 @@
+.missionCard{
+    background-color: darkblue;
+    padding: 0px;
+    margin: 0px;
+    outline: 2px solid orangered
+}
+
+h2, p{
+    color: aliceblue;
+    font-size: 20px;
+    
+}

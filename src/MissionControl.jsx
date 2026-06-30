@@ -9,18 +9,16 @@ import MissionAction from "./MissionAction.jsx";
 import MissionFilter from "./MissionFilter.jsx";
 
 
-function missionControl({missions}){
+function MissionControl({missions}){
     //Essentailly copies given object to manipluate
     const [data, setData] = useState(missions);
 
     //Used in MissionAction.jsx
     function changeStatus(id, newStatus){
-        
             //Runs through the array and updates matching missions status
             setData(pastData => pastData.map(mission=>{
                 return mission.id === id ? {... mission, status: newStatus} : mission; 
             }))
-        
     };
 
     return(
@@ -54,4 +52,4 @@ function missionControl({missions}){
     );
 }
 
-export default missionControl;
+export default MissionControl;

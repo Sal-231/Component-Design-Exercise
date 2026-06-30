@@ -7,11 +7,11 @@ function missionAction({id, changeStatus}){
     return(
         <>
             <button
-            onClick={() =>changeStatus(id, "Active")}
+            onClick={() => changeStatus(id, "Active")}
             >Launch</button>
 
             <button
-            onClick={() =>changeStatus(id, "Completed")}
+            onClick={() => changeStatus(id, "Completed")}
             >Complete</button>
         </>
     )
