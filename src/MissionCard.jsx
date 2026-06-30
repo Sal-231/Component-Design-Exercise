@@ -1,5 +1,6 @@
 // A stateless component that displays information about a mission, such as its name, status, and crew.
 // It receives all necessary data through props from MissionControl and focuses solely on presentation.
+
 //import styles from "./MissionCard.css";
 
 function missionCard({name, status, crew}){
@@ -11,6 +12,5 @@ function missionCard({name, status, crew}){
         </>
     )
 }
-
 
 export default missionCard;

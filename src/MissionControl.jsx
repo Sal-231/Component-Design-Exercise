@@ -10,15 +10,15 @@ import MissionFilter from "./MissionFilter.jsx";
 
 
 function missionControl({missions}){
-    
+    //Essentailly copies given object to manipluate
     const [data, setData] = useState(missions);
 
     //Used in MissionAction.jsx
-    function changeStatus(id, change){
+    function changeStatus(id, newStatus){
         
-            //setData({missions.filter(mission => mission.id === id), status: change})
+            //Runs through the array and updates matching missions status
             setData(pastData => pastData.map(mission=>{
-                return mission.id === id ? {... mission, status: change} : mission; 
+                return mission.id === id ? {... mission, status: newStatus} : mission; 
             }))
         
     };
@@ -27,10 +27,11 @@ function missionControl({missions}){
         <>
             <h1>Space Mission Control</h1>
 
-            <MissionFilter status="all"></MissionFilter>
+            <MissionFilter></MissionFilter>
 
             <ol>
-                {missions.map(m=>{
+                {/* Uses 'copied' array */}
+                {data.map(m=>{
                     return <ul key={m.id}>
                         <div>
                             <MissionCard
