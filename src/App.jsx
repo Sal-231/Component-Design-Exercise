@@ -1,4 +1,4 @@
-//import styles from "./App.module.css";
+import "./App.css";
 import MissionControl from "./MissionControl.jsx";
 
 function App ()

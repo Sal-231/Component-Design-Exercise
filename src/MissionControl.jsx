@@ -3,7 +3,7 @@
 // It manages the mission list and its statuses, orchestrating the data flow to child components.
 
 import {useState} from "react";
-//import styles from "./MissionControl.css";
+import "./MissionControl.css";
 import MissionCard from "./MissionCard.jsx";
 import MissionAction from "./MissionAction.jsx";
 import MissionFilter from "./MissionFilter.jsx";
